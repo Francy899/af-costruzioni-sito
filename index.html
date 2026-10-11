@@ -3,131 +3,331 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f6eee5">
+<meta name="theme-color" content="#f8f3ec">
 <title>A.F. Impianti e Costruzioni Srl</title>
-<meta name="description" content="A.F. Impianti e Costruzioni Srl: costruzioni, ristrutturazioni, impianti e finiture.">
+<meta name="description" content="Costruzioni, ristrutturazioni e impianti. A.F. Impianti e Costruzioni Srl.">
+
 <style>
-:root{--bg:#f8f3ec;--white:#fff;--ink:#172f49;--brick:#b64c2d;--orange:#e87522;--yellow:#ffbf16;--muted:#646a70;--line:#e8ddd0}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-img{display:block;width:100%;object-fit:cover}
-.container{width:min(1200px,92%);margin:auto}
-header{position:sticky;top:0;z-index:30;background:#fffdf9f2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:1000;font-size:14px;line-height:1.2}
-.brand svg{width:58px;height:58px;flex-shrink:0}
-.brand small{display:block;font-size:10px;letter-spacing:1.5px;color:var(--brick);margin-top:5px}
-.navlinks{display:flex;align-items:center;gap:22px;font-size:12px;font-weight:900}
-.navlinks a:hover{color:var(--brick)}
-.navcta,.btn{display:inline-block;background:var(--yellow);color:#17212b;padding:13px 18px;font-size:12px;font-weight:900;border-radius:7px;transition:.2s}
-.btn:hover,.navcta:hover{transform:translateY(-2px);background:#ffcf45}
-.menu{display:none;border:0;background:var(--ink);color:white;border-radius:6px;padding:10px 13px;font-size:20px}
-.hero{min-height:650px;position:relative;display:flex;align-items:center;overflow:hidden;background:#563c2e}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#231b17e8 0%,#39271aab 50%,#32201635 100%),url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=85') center/cover;animation:zoom 18s ease-in-out infinite alternate}
-@keyframes zoom{to{transform:scale(1.08)}}
-.hero-content{position:relative;padding:80px 0;max-width:750px;color:white}
-.eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:900;color:var(--brick)}
-.hero .eyebrow{color:#ffd24b}
-h1{font-size:clamp(43px,7vw,84px);line-height:.98;letter-spacing:-3px;text-transform:uppercase;margin:22px 0}
-h1 span{color:var(--yellow)}
-.hero p{font-size:17px;max-width:610px;color:#fff5eb;line-height:1.8}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
-.btn-outline{border:1px solid #ffffffbd;background:transparent;color:white}
-.hero-note{margin-top:45px;padding-top:15px;border-top:1px solid #ffffff75;font-size:11px;letter-spacing:1px;font-weight:900}
-.marquee{background:var(--yellow);color:#332416;padding:13px 0;font-weight:1000;font-size:12px;letter-spacing:2px}
-.marquee .container{display:flex;justify-content:space-around;gap:15px;flex-wrap:wrap}
-section{padding:82px 0}
-h2{font-size:clamp(31px,4.5vw,57px);line-height:1.06;letter-spacing:-1.8px;margin:14px 0 22px}
-.lead{font-size:20px;color:var(--ink);line-height:1.6}
-p{color:var(--muted)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about-img{position:relative}
-.about-img img{height:420px;border-radius:8px}
-.photo-tag{position:absolute;left:0;bottom:0;background:var(--yellow);padding:12px 16px;border-radius:0 7px 0 7px;font-size:12px;font-weight:900}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
-.stat{padding:15px;background:white;border-bottom:3px solid var(--orange);border-radius:5px}
-.stat strong{display:block;font-size:25px;color:var(--brick)}
-.stat span{font-size:10px;font-weight:800;color:var(--muted)}
-.services{background:#efe2d4}
-.heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:32px}
-.heading h2{max-width:650px;margin-bottom:0}
-.heading p{max-width:340px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 5px 22px #593b1a0c;transition:.25s}
-.card:hover{transform:translateY(-5px);box-shadow:0 12px 28px #593b1a18}
-.card img{height:210px}
-.card-body{padding:21px}
-.card-body small{font-weight:900;font-size:10px;letter-spacing:1.5px;color:var(--brick)}
-.card h3{font-size:19px;line-height:1.2;margin:10px 0;text-transform:uppercase}
-.card p{font-size:13px;line-height:1.7;margin-bottom:0}
-.locations{background:white}
-.regions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}
-.region{padding:17px;background:#f8f0e6;border:1px solid #eadaca;border-radius:6px;font-weight:900}
-.region:before{content:"📍";margin-right:8px}
-.map-link{display:inline-block;margin-top:12px;background:var(--yellow);color:#17212b;padding:12px 15px;border-radius:6px;font-size:12px;font-weight:900}
-.projects{background:#efe2d4}
-.project-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
-.project-main,.project-small{position:relative;overflow:hidden;border-radius:8px;background:#b9aa99}
-.project-main img{height:460px}
-.project-side{display:grid;grid-template-rows:1fr 1fr;gap:16px}
-.project-small img{height:222px}
-.project-main:after,.project-small:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#142130d9)}
-.project-caption{position:absolute;z-index:2;left:20px;right:20px;bottom:17px;color:white}
-.project-caption small{color:#ffd14a;font-weight:900;letter-spacing:2px}
-.project-caption h3{font-size:clamp(20px,3vw,32px);margin:5px 0}
-.project-caption p{color:white;font-size:13px}
-.contact{background:var(--ink);color:white}
-.contact .eyebrow{color:var(--yellow)}
-.contact h2{color:white}
-.contact p{color:#e3e6e9}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-.contact-card{background:white;color:var(--ink);padding:28px;border-radius:8px}
-.contact-row{padding:15px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
-.contact-row:last-child{border:0}
-.contact-row small{display:block;color:var(--brick);font-weight:900;font-size:10px;letter-spacing:1.5px;margin-bottom:5px}
-.contact-row a{text-decoration:underline;text-underline-offset:3px}
-footer{padding:24px 0;background:#102338;color:#e7e9ea;font-size:12px}
-footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.whatsapp{position:fixed;right:17px;bottom:17px;z-index:40;background:#21c768;color:#10291b;padding:14px 17px;border-radius:30px;font-size:12px;font-weight:1000;box-shadow:0 5px 20px #0002}
-.guide{position:fixed;left:14px;bottom:14px;z-index:35;display:flex;align-items:end;gap:9px;max-width:290px;pointer-events:none;animation:hello 2s ease-in-out infinite alternate}
-@keyframes hello{to{transform:translateY(-5px)}}
-.worker{font-size:60px;filter:drop-shadow(0 4px 3px #0002);line-height:1}
-.bubble{background:white;border:2px solid var(--yellow);padding:12px 14px;border-radius:15px 15px 15px 2px;box-shadow:0 5px 20px #0001;font-size:12px;line-height:1.4;color:var(--ink)}
-.bubble strong{display:block;color:var(--brick);margin-bottom:3px}
-.bubble button{pointer-events:auto;border:0;background:var(--yellow);padding:5px 8px;margin-top:6px;border-radius:5px;font-weight:900;cursor:pointer}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
-.reveal.visible{opacity:1;transform:translateY(0)}
-@media(max-width:850px){
-.navlinks{display:none;position:absolute;top:82px;left:0;right:0;padding:18px 5%;background:white;flex-direction:column;align-items:stretch}
-.navlinks.open{display:flex}.navlinks a{padding:10px}.menu{display:block}
-.grid2,.contact-grid{grid-template-columns:1fr;gap:28px}
-.cards{grid-template-columns:repeat(2,1fr)}
-.heading{display:block}.heading p{max-width:600px}
-.project-grid{grid-template-columns:1fr}.project-main img{height:350px}
-.project-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}
-.project-small img{height:210px}
-.regions{grid-template-columns:repeat(2,1fr)}
+:root {
+  --sfondo: #f8f3ec;
+  --bianco: #ffffff;
+  --blu: #173653;
+  --mattone: #b94e30;
+  --arancio: #e87925;
+  --giallo: #ffc21b;
+  --testo: #283440;
+  --grigio: #69737b;
+  --bordo: #e8ddd1;
 }
-@media(max-width:520px){
-section{padding:60px 0}
-.hero{min-height:610px}
-.hero-content{padding:60px 0}
-h1{font-size:46px;letter-spacing:-2px}
-.hero p{font-size:15px}
-.cards{grid-template-columns:1fr}
-.card img{height:210px}
-.about-img img{height:300px}
-.stats{grid-template-columns:1fr 1fr}
-.project-side{grid-template-columns:1fr}
-.project-main img{height:310px}.project-small img{height:210px}
-.regions{grid-template-columns:1fr 1fr}
-.region{font-size:12px;padding:12px 8px}
-.guide{left:6px;bottom:7px;max-width:230px}
-.worker{font-size:43px}
-.bubble{font-size:10px;padding:8px 10px}
-.whatsapp{right:8px;bottom:8px;padding:12px;font-size:11px}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+body {
+  margin: 0;
+  background: var(--sfondo);
+  color: var(--testo);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { width: min(1180px, 92%); margin: auto; }
+section { padding: 78px 0; }
+h1, h2, h3 { color: var(--blu); }
+h2 {
+  font-size: clamp(32px, 4.6vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin: 15px 0 22px;
+}
+p { color: var(--grigio); }
+.eyebrow {
+  color: var(--mattone);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  padding: 13px 18px;
+  border-radius: 6px;
+  background: var(--giallo);
+  color: #202b34;
+  font-size: 12px;
+  font-weight: 900;
+  transition: transform .2s, background .2s;
+}
+.btn:hover { transform: translateY(-2px); background: #ffd34d; }
+
+/* MENU */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fffdf9f2;
+  border-bottom: 1px solid var(--bordo);
+  backdrop-filter: blur(12px);
+}
+nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--blu);
+  font-size: 13px;
+  font-weight: 900;
+}
+.brand img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background: white;
+}
+.brand small {
+  display: block;
+  margin-top: 4px;
+  color: var(--mattone);
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 12px;
+  font-weight: 900;
+}
+.navlinks a:hover { color: var(--mattone); }
+.navlinks .nav-contact {
+  background: var(--giallo);
+  color: var(--blu);
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+.menu-button {
+  display: none;
+  border: 0;
+  border-radius: 6px;
+  background: var(--blu);
+  color: white;
+  padding: 9px 13px;
+  font-size: 21px;
+}
+
+/* COPERTINA */
+.hero {
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #754a30;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #241a13e8, #3a281a9c 52%, #241a1320),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+  animation: movimento-sfondo 18s ease-in-out infinite alternate;
+}
+@keyframes movimento-sfondo {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.hero-content {
+  position: relative;
+  max-width: 780px;
+  padding: 75px 0;
+  animation: entrata .9s ease both;
+}
+@keyframes entrata {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero .eyebrow { color: #ffd34b; }
+.hero h1 {
+  color: white;
+  font-size: clamp(45px, 7.5vw, 86px);
+  line-height: .97;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  margin: 22px 0;
+}
+.hero h1 span { color: var(--giallo); }
+.hero p {
+  max-width: 590px;
+  color: #fff7ef;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid #ffffffa8;
+  color: white;
+}
+.hero-bottom {
+  margin-top: 45px;
+  padding-top: 16px;
+  border-top: 1px solid #ffffff70;
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* FASCIA */
+.fascia {
+  padding: 14px 0;
+  background: var(--giallo);
+  color: #26313b;
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+.fascia .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* LAYOUT GENERALE */
+.due-colonne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+.foto-azienda { position: relative; }
+.foto-azienda img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.etichetta-foto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 16px;
+  border-radius: 0 6px 0 6px;
+  background: var(--giallo);
+  color: var(--blu);
+  font-size: 11px;
+  font-weight: 900;
+}
+.numeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 22px;
+}
+.numero {
+  padding: 14px;
+  background: white;
+  border-bottom: 3px solid var(--arancio);
+  border-radius: 5px;
+}
+.numero strong {
+  display: block;
+  color: var(--mattone);
+  font-size: 23px;
+}
+.numero span {
+  color: var(--grigio);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* SERVIZI */
+.servizi { background: #efe2d4; }
+.intestazione-sezione {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.intestazione-sezione h2 { margin-bottom: 0; }
+.griglia-servizi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+.scheda-servizio {
+  overflow: hidden;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px #573a2010;
+  transition: transform .25s;
+}
+.scheda-servizio:hover { transform: translateY(-5px); }
+.scheda-servizio img { width: 100%; height: 205px; object-fit: cover; }
+.scheda-servizio .contenuto { padding: 20px; }
+.scheda-servizio small {
+  color: var(--mattone);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+.scheda-servizio h3 {
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.scheda-servizio p { font-size: 13px; }
+
+/* ANIMAZIONI DI SCORRIMENTO */
+.rivela {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.rivela.visibile { opacity: 1; transform: translateY(0); }
+
+@media(max-width: 850px) {
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    padding: 18px 5%;
+    background: white;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navlinks.aperto { display: flex; }
+  .navlinks a { padding: 9px; }
+  .menu-button { display: block; }
+  .due-colonne { grid-template-columns: 1fr; gap: 28px; }
+  .griglia-servizi { grid-template-columns: repeat(2, 1fr); }
+  .intestazione-sezione { display: block; }
+}
+@media(max-width: 520px) {
+  section { padding: 58px 0; }
+  .hero { min-height: 600px; }
+  .hero h1 { font-size: 45px; letter-spacing: -2px; }
+  .hero p { font-size: 15px; }
+  .griglia-servizi { grid-template-columns: 1fr; }
+  .foto-azienda img { height: 300px; }
+  .brand img { width: 55px; height: 55px; }
+  .numeri { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 </head>
@@ -135,192 +335,501 @@ h1{font-size:46px;letter-spacing:-2px}
 
 <header>
 <nav class="container">
-<a class="brand" href="#home" aria-label="A.F. Impianti e Costruzioni">
-<svg viewBox="0 0 100 100" role="img" aria-label="Logo A.F.">
-<rect x="2" y="2" width="96" height="96" rx="17" fill="#fff"/>
-<path d="M12 48 L12 28 L34 28 L34 12 L49 12 L49 48" fill="#173c59"/>
-<path d="M15 50 L29 50 L29 35 L15 35Z M37 25 L44 25 L44 33 L37 33Z" fill="#fff"/>
-<text x="7" y="72" font-size="27" font-weight="900" fill="#173c59">A.F.</text>
-<path d="M51 26 L59 19 L64 28 L57 35 L67 49 L61 53 L51 40 L45 48 L39 44Z" fill="#ef8a13" stroke="#173c59" stroke-width="2"/>
-<path d="M60 56 L84 56 L84 64 L60 64Z" fill="#173c59"/>
-<text x="50" y="80" text-anchor="middle" font-size="8" font-weight="900" fill="#173c59">IMPIANTI E</text>
-<text x="50" y="89" text-anchor="middle" font-size="8" font-weight="900" fill="#173c59">COSTRUZIONI Srl</text>
-</svg>
-<span>A.F. IMPIANTI<small>E COSTRUZIONI SRL</small></span>
-</a>
-<button class="menu" aria-label="Apri il menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
-<div class="navlinks">
-<a href="#azienda">Chi siamo</a>
-<a href="#territorio">Dove lavoriamo</a>
-<a href="#servizi">I nostri servizi</a>
-<a href="#contatti">Contattaci</a>
-<a class="navcta" href="https://wa.me/393895313550" target="_blank" rel="noopener">WhatsApp ↗</a>
-</div>
+  <a class="brand" href="#home" aria-label="A.F. Impianti e Costruzioni Srl">
+    <img src="logo-af.jpg" alt="Logo originale A.F. Impianti e Costruzioni Srl">
+    <span>A.F. IMPIANTI<small>E COSTRUZIONI SRL</small></span>
+  </a>
+  <button class="menu-button" aria-label="Apri menu"
+    onclick="document.querySelector('.navlinks').classList.toggle('aperto')">☰</button>
+  <div class="navlinks">
+    <a href="#azienda">Chi siamo</a>
+    <a href="#territorio">Dove lavoriamo</a>
+    <a href="#servizi">I nostri servizi</a>
+    <a class="nav-contact" href="#contatti">Contattaci</a>
+  </div>
 </nav>
 </header>
 
 <main id="home">
 <section class="hero">
-<div class="container hero-content">
-<div class="eyebrow">Costruzioni · Impianti · Ristrutturazioni</div>
-<h1>Costruiamo<br>il tuo <span>futuro.</span></h1>
-<p>Soluzioni edili e impiantistiche per case, aziende e spazi pubblici. Qualità, esperienza e attenzione in ogni progetto.</p>
-<div class="actions">
-<a class="btn" href="#servizi">Scopri i nostri servizi ↓</a>
-<a class="btn btn-outline" href="#azienda">Chi siamo</a>
-</div>
-<div class="hero-note">COSTRUZIONI · IMPIANTI · RISTRUTTURAZIONI · FINITURE</div>
-</div>
+  <div class="container hero-content">
+    <div class="eyebrow">Costruzioni · Impianti · Ristrutturazioni</div>
+    <h1>Costruiamo<br>il tuo <span>futuro.</span></h1>
+    <p>Soluzioni edili e impiantistiche per case, aziende e spazi pubblici. Qualità, esperienza e attenzione in ogni progetto.</p>
+    <div class="hero-buttons">
+      <a class="btn" href="#servizi">Scopri i nostri servizi ↓</a>
+      <a class="btn btn-outline" href="#azienda">Chi siamo</a>
+    </div>
+    <div class="hero-bottom">EDILIZIA · IMPIANTI · RISTRUTTURAZIONI · FINITURE</div>
+  </div>
 </section>
 
-<div class="marquee"><div class="container"><span>EDILIZIA</span><span>IMPIANTI</span><span>RISTRUTTURAZIONI</span><span>CURA DEI DETTAGLI</span></div></div>
-
-<section id="azienda">
-<div class="container grid2">
-<div>
-<div class="eyebrow">01 / Chi siamo</div>
-<h2>Esperienza, serietà e passione per costruire.</h2>
-<p class="lead">Ogni progetto inizia dall'ascolto e prende forma attraverso il lavoro.</p>
-<p>A.F. Impianti e Costruzioni Srl opera nel settore edile e impiantistico, offrendo soluzioni per costruzioni, ristrutturazioni, impianti elettrici e idraulici, isolamento termico e finiture. Lavoriamo con un approccio concreto e attenzione alle esigenze del cliente.</p>
-<div class="stats">
-<div class="stat"><strong>360°</strong><span>Servizi per l'edilizia</span></div>
-<div class="stat"><strong>7</strong><span>Regioni indicate</span></div>
-<div class="stat"><strong>A.F.</strong><span>Un riferimento</span></div>
+<div class="fascia">
+  <div class="container">
+    <span>COSTRUZIONI</span><span>IMPIANTI</span>
+    <span>RISTRUTTURAZIONI</span><span>FINITURE</span>
+  </div>
 </div>
-</div>
-<div class="about-img">
-<img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=85" alt="Operai al lavoro in cantiere">
-<div class="photo-tag">Serietà · Impegno · Attenzione</div>
-</div>
-</div>
-</section>
-
-<section class="services" id="servizi">
-<div class="container">
-<div class="heading">
-<div><div class="eyebrow">02 / I nostri servizi</div><h2>Soluzioni complete per ogni esigenza.</h2></div>
-<p>Dall'edilizia agli impianti, un unico riferimento per valutare le esigenze del tuo progetto.</p>
-</div>
-<div class="cards">
-<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&w=850&q=80" alt="Progetto edilizio"><div class="card-body"><small>01 / EDILIZIA</small><h3>Costruzioni e ristrutturazioni</h3><p>Interventi edili, rinnovamento degli ambienti e lavorazioni per edifici nuovi o da riqualificare.</p></div></article>
-<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=850&q=80" alt="Impianto elettrico"><div class="card-body"><small>02 / IMPIANTI</small><h3>Impianti elettrici</h3><p>Lavorazioni e interventi su impianti elettrici per ambienti residenziali e professionali.</p></div></article>
-<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=850&q=80" alt="Materiali per impianti idraulici"><div class="card-body"><small>03 / IMPIANTI</small><h3>Idraulica e riscaldamento</h3><p>Interventi per impianti idraulici, distribuzione dell'acqua e sistemi di riscaldamento.</p></div></article>
-<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=850&q=80" alt="Edificio contemporaneo"><div class="card-body"><small>04 / EFFICIENZA</small><h3>Cappotti e isolamento termico</h3><p>Soluzioni di isolamento per il comfort degli ambienti e la riqualificazione degli edifici.</p></div></article>
-<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=850&q=80" alt="Interni e finiture"><div class="card-body"><small>05 / FINITURE</small><h3>Pavimenti e finiture</h3><p>Posa, rivestimenti e finiture per ambienti curati, funzionali e accoglienti.</p></div></article>
-<article class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=850&q=80" alt="Lavoro in cantiere"><div class="card-body"><small>06 / OPERE EDILI</small><h3>Altre opere edili</h3><p>Ulteriori lavorazioni, da valutare in base alle caratteristiche dell'intervento richiesto.</p></div></article>
-</div>
-</div>
-</section>
-
-<section class="locations" id="territorio">
-<div class="container grid2">
-<div>
-<div class="eyebrow">03 / Dove lavoriamo</div>
-<h2>Presenti in più regioni.</h2>
-<p>Operiamo in diverse aree d'Italia. La disponibilità viene valutata in base al tipo di intervento, alle tempistiche e alle esigenze del progetto.</p>
-<div class="regions">
-<div class="region">Lombardia</div><div class="region">Veneto</div>
-<div class="region">Liguria</div><div class="region">Lazio</div>
-<div class="region">Calabria</div><div class="region">Basilicata</div>
-<div class="region">Sicilia</div>
-</div>
-</div>
-<div class="about-img">
-<img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85" alt="Edifici moderni">
-<div class="photo-tag">Lavoriamo sul territorio</div>
-</div>
-</div>
-</section>
-
-<section class="projects" id="lavori">
-<div class="container">
-<div class="heading">
-<div><div class="eyebrow">04 / Una delle nostre opere</div><h2>Il Tempietto di Reggio Calabria.</h2></div>
-<p>Un luogo significativo del territorio reggino.</p>
-</div>
-<div class="project-grid">
-<div class="project-main">
-<img loading="lazy" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=85" alt="Architettura e spazio urbano, immagine illustrativa">
-<div class="project-caption"><small>REGGIO CALABRIA</small><h3>Il Tempietto</h3><p>Il Tempietto di Reggio Calabria è una delle opere che presentiamo per raccontare la nostra esperienza nel settore delle costruzioni.</p></div>
-</div>
-<div class="project-side">
-<div class="project-small"><img loading="lazy" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=850&q=80" alt="Architettura moderna, immagine illustrativa"><div class="project-caption"><small>ARCHITETTURA</small><h3>Spazi pubblici</h3></div></div>
-<div class="project-small"><img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=850&q=80" alt="Cantiere, immagine illustrativa"><div class="project-caption"><small>EDILIZIA</small><h3>Lavori e costruzioni</h3></div></div>
-</div>
-</div>
-<p>Nota: le immagini in questa sezione sono illustrative e non sono fotografie documentali del Tempietto. Per mostrare le tue tre foto originali, dovranno essere incorporate nel file o ospitate nel repository.</p>
-</div>
-</section>
-
-<section class="contact" id="contatti">
-<div class="container contact-grid">
-<div>
-<div class="eyebrow">05 / Contattaci</div>
-<h2>Il prossimo progetto comincia qui.</h2>
-<p>Hai bisogno di informazioni sui nostri servizi o vuoi parlarci del tuo intervento? Contattaci per raccontarci le tue esigenze.</p>
-<a class="btn" href="mailto:a.f.costruzioneimpianti@gmail.com">Scrivici un'email ↗</a>
-</div>
-<div class="contact-card">
-<div class="contact-row"><small>AZIENDA</small>A.F. Impianti e Costruzioni Srl</div>
-<div class="contact-row"><small>TELEFONO</small><a href="tel:+393895313550">+39 389 5313550</a></div>
-<div class="contact-row"><small>EMAIL</small><a href="mailto:a.f.costruzioneimpianti@gmail.com">a.f.costruzioneimpianti@gmail.com</a></div>
-<div class="contact-row"><small>SEDE</small>Via Dir. S. Anna II Tronco 20/E, 89128 Reggio Calabria<br><a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=Via%20Dir.%20S.%20Anna%20II%20Tronco%2020%2FE%2C%2089128%20Reggio%20Calabria" target="_blank" rel="noopener">📍 Apri Google Maps e avvia il percorso ↗</a></div>
-<div class="contact-row"><small>WHATSAPP</small><a href="https://wa.me/393895313550" target="_blank" rel="noopener">Scrivici su WhatsApp ↗</a></div>
-</div>
-</div>
-</section>
 </main>
 
-<footer><div class="container"><span>© <span id="year"></span> A.F. Impianti e Costruzioni Srl</span><span>Costruzioni · Impianti · Ristrutturazioni</span></div></footer>
+<section id="azienda">
+  <div class="container due-colonne">
+    <div>
+      <div class="eyebrow">01 / Chi siamo</div>
+      <h2>Esperienza, serietà e passione per costruire.</h2>
+      <p style="font-size:20px;color:var(--blu)">
+        Ogni progetto inizia dall'ascolto e prende forma attraverso il lavoro.
+      </p>
+      <p>
+        A.F. Impianti e Costruzioni Srl opera nel settore edile e impiantistico,
+        offrendo soluzioni per costruzioni, ristrutturazioni, impianti elettrici
+        e idraulici, isolamento termico e finiture. Lavoriamo con un approccio
+        concreto, attenzione alle lavorazioni e cura dei dettagli.
+      </p>
+      <p>
+        Il nostro obiettivo è offrire un riferimento per chi cerca servizi
+        edili e impiantistici, valutando le esigenze specifiche di ogni progetto.
+      </p>
+      <div class="numeri">
+        <div class="numero"><strong>A.F.</strong><span>La nostra azienda</span></div>
+        <div class="numero"><strong>7</strong><span>Regioni indicate</span></div>
+        <div class="numero"><strong>360°</strong><span>Servizi per l'edilizia</span></div>
+      </div>
+    </div>
+    <div class="foto-azienda">
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=85"
+        alt="Lavoratori in un cantiere edile">
+      <div class="etichetta-foto">Serietà · Impegno · Attenzione</div>
+    </div>
+  </div>
+</section>
 
-<div class="guide" id="guide">
-<div class="worker" aria-hidden="true">👷🏻‍♂️</div>
-<div class="bubble"><strong>Ciao! Sono qui per aiutarti.</strong><span id="guide-text">Usa il menu per scoprire la nostra azienda, i servizi e i contatti.</span><br><button onclick="nextGuide()">Mostrami ↗</button></div>
+<section class="servizi" id="servizi">
+  <div class="container">
+    <div class="intestazione-sezione">
+      <div>
+        <div class="eyebrow">02 / I nostri servizi</div>
+        <h2>Soluzioni complete per ogni esigenza.</h2>
+      </div>
+      <p>Dall'edilizia agli impianti, servizi da valutare in base alle necessità del tuo progetto.</p>
+    </div>
+
+    <div class="griglia-servizi">
+      <article class="scheda-servizio">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&w=850&q=80"
+          alt="Progetto architettonico">
+        <div class="contenuto">
+          <small>01 / EDILIZIA</small>
+          <h3>Costruzioni e ristrutturazioni</h3>
+          <p>Interventi edili, rinnovamento degli ambienti e lavorazioni per edifici nuovi o da riqualificare.</p>
+        </div>
+      </article>
+
+      <article class="scheda-servizio">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=850&q=80"
+          alt="Lavori su un impianto elettrico">
+        <div class="contenuto">
+          <small>02 / IMPIANTI</small>
+          <h3>Impianti elettrici</h3>
+          <p>Lavorazioni e interventi su impianti elettrici per ambienti residenziali e professionali.</p>
+        </div>
+      </article>
+
+      <article class="scheda-servizio">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=850&q=80"
+          alt="Materiali per impianti idraulici">
+        <div class="contenuto">
+          <small>03 / IMPIANTI</small>
+          <h3>Idraulica e riscaldamento</h3>
+          <p>Interventi per impianti idraulici, distribuzione dell'acqua e sistemi di riscaldamento.</p>
+        </div>
+      </article>
+
+      <article class="scheda-servizio">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=850&q=80"
+          alt="Edificio contemporaneo">
+        <div class="contenuto">
+          <small>04 / EFFICIENZA</small>
+          <h3>Cappotti e isolamento termico</h3>
+          <p>Soluzioni di isolamento per il comfort degli ambienti e la riqualificazione degli edifici.</p>
+        </div>
+      </article>
+
+      <article class="scheda-servizio">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=850&q=80"
+          alt="Interni moderni e finiture">
+        <div class="contenuto">
+          <small>05 / FINITURE</small>
+          <h3>Pavimenti e finiture</h3>
+          <p>Posa, rivestimenti e finiture per ambienti curati, funzionali e accoglienti.</p>
+        </div>
+      </article>
+
+      <article class="scheda-servizio">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=850&q=80"
+          alt="Lavorazioni in cantiere">
+        <div class="contenuto">
+          <small>06 / OPERE EDILI</small>
+          <h3>Altre opere edili</h3>
+          <p>Ulteriori lavorazioni da valutare in base alle caratteristiche dell'intervento richiesto.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="territorio">
+  <div class="container due-colonne">
+    <div>
+      <div class="eyebrow">03 / Dove lavoriamo</div>
+      <h2>Presenti in più regioni.</h2>
+      <p>
+        Operiamo in diverse aree d'Italia. La disponibilità viene valutata
+        in base al tipo di intervento, alle tempistiche e alle esigenze del progetto.
+      </p>
+      <div class="numeri">
+        <div class="numero"><strong>01</strong><span>Lombardia</span></div>
+        <div class="numero"><strong>02</strong><span>Veneto</span></div>
+        <div class="numero"><strong>03</strong><span>Liguria</span></div>
+        <div class="numero"><strong>04</strong><span>Lazio</span></div>
+        <div class="numero"><strong>05</strong><span>Calabria</span></div>
+        <div class="numero"><strong>06</strong><span>Basilicata</span></div>
+        <div class="numero"><strong>07</strong><span>Sicilia</span></div>
+      </div>
+    </div>
+    <div class="foto-azienda">
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=85"
+        alt="Edifici e architettura contemporanea">
+      <div class="etichetta-foto">Lavoriamo sul territorio</div>
+    </div>
+  </div>
+</section>
+
+<section class="servizi" id="lavori">
+  <div class="container">
+    <div class="intestazione-sezione">
+      <div>
+        <div class="eyebrow">04 / Una delle nostre opere</div>
+        <h2>Il Tempietto di Reggio Calabria.</h2>
+      </div>
+      <p>Un progetto legato al territorio reggino.</p>
+    </div>
+
+    <div class="due-colonne">
+      <div class="foto-azienda">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1100&q=85"
+          alt="Architettura contemporanea, immagine illustrativa">
+        <div class="etichetta-foto">Reggio Calabria</div>
+      </div>
+      <div>
+        <h2 style="font-size:32px">Un'opera che racconta il nostro lavoro.</h2>
+        <p>
+          Il Tempietto di Reggio Calabria è una delle opere che vogliamo
+          presentare per raccontare la nostra esperienza nel settore delle
+          costruzioni e il legame con il territorio.
+        </p>
+        <p>
+          Le immagini mostrate qui sono illustrative: nella versione finale
+          vanno sostituite con le tre fotografie originali del Tempietto
+          che ci hai inviato.
+        </p>
+        <a class="btn" href="#contatti">Richiedi informazioni ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti" style="background:var(--blu);color:white">
+  <div class="container due-colonne">
+    <div>
+      <div class="eyebrow" style="color:var(--giallo)">05 / Contattaci</div>
+      <h2 style="color:white">Il prossimo progetto comincia qui.</h2>
+      <p style="color:#e4e9ed">
+        Hai bisogno di informazioni sui nostri servizi o vuoi parlarci
+        del tuo intervento? Contattaci per raccontarci le tue esigenze.
+      </p>
+      <div style="margin-top:25px">
+        <a class="btn" href="mailto:a.f.costruzioneimpianti@gmail.com">
+          Scrivici un'email ↗
+        </a>
+      </div>
+    </div>
+
+    <div style="background:white;color:var(--blu);padding:26px;border-radius:8px">
+      <div style="padding:14px 0;border-bottom:1px solid var(--bordo)">
+        <div class="eyebrow">Azienda</div>
+        <strong>A.F. Impianti e Costruzioni Srl</strong>
+      </div>
+
+      <div style="padding:14px 0;border-bottom:1px solid var(--bordo)">
+        <div class="eyebrow">Telefono</div>
+        <a href="tel:+393895313550">+39 389 5313550</a>
+      </div>
+
+      <div style="padding:14px 0;border-bottom:1px solid var(--bordo)">
+        <div class="eyebrow">Email</div>
+        <a href="mailto:a.f.costruzioneimpianti@gmail.com">
+          a.f.costruzioneimpianti@gmail.com
+        </a>
+      </div>
+
+      <div style="padding:14px 0;border-bottom:1px solid var(--bordo)">
+        <div class="eyebrow">Sede</div>
+        <p style="margin:5px 0;color:var(--blu)">
+          Via Dir. S. Anna II Tronco 20/E, 89128 Reggio Calabria
+        </p>
+        <a class="btn"
+           href="https://www.google.com/maps/dir/?api=1&destination=Via%20Dir.%20S.%20Anna%20II%20Tronco%2020%2FE%2C%2089128%20Reggio%20Calabria"
+           target="_blank" rel="noopener">
+          📍 Apri Google Maps e avvia il percorso ↗
+        </a>
+      </div>
+
+      <div style="padding:14px 0 0">
+        <div class="eyebrow">WhatsApp</div>
+        <a class="btn" href="https://wa.me/393895313550"
+           target="_blank" rel="noopener">
+          Scrivici su WhatsApp ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--giallo);padding:45px 0">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+    <div>
+      <h2 style="font-size:clamp(27px,4vw,42px);margin:0;color:var(--blu)">
+        Hai un progetto da realizzare?
+      </h2>
+      <p style="margin:8px 0 0;color:var(--blu)">Parliamone insieme.</p>
+    </div>
+    <a class="btn" style="background:var(--blu);color:white"
+       href="mailto:a.f.costruzioneimpianti@gmail.com">
+      Contattaci ↗
+    </a>
+  </div>
+</section>
+
+<footer style="padding:25px 0;background:#142b40;color:white;font-size:12px">
+  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span>© <span id="anno"></span> A.F. Impianti e Costruzioni Srl</span>
+    <span>Costruzioni · Impianti · Ristrutturazioni</span>
+  </div>
+</footer>
+
+<!-- FRANCESCO: ASSISTENTE DEL SITO -->
+<div id="francesco" class="francesco-guida">
+  <button class="francesco-x" onclick="chiudiFrancesco()"
+          aria-label="Chiudi Francesco">×</button>
+
+  <div class="francesco-omino" aria-hidden="true">👷🏻‍♂️</div>
+
+  <div class="francesco-fumetto">
+    <strong id="francesco-titolo">Ciao, sono Francesco!</strong>
+    <p id="francesco-testo">
+      Benvenuto! Scegli quale sezione vuoi vedere e ti accompagno.
+    </p>
+
+    <div class="francesco-scelte">
+      <button onclick="vaiASezione('azienda')">👋 Chi siamo</button>
+      <button onclick="vaiASezione('territorio')">📍 Dove lavoriamo</button>
+      <button onclick="vaiASezione('servizi')">🛠️ I nostri servizi</button>
+      <button onclick="vaiASezione('contatti')">✉️ Contattaci</button>
+    </div>
+
+    <button class="francesco-ok" onclick="chiudiFrancesco()">
+      Grazie, continuo da solo
+    </button>
+  </div>
 </div>
 
-<a class="whatsapp" href="https://wa.me/393895313550" target="_blank" rel="noopener">WhatsApp ↗</a>
+<a class="whatsapp-fisso" href="https://wa.me/393895313550"
+   target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
+  WhatsApp ↗
+</a>
+
+<style>
+.francesco-guida {
+  position:fixed;
+  left:14px;
+  bottom:14px;
+  z-index:100;
+  width:min(410px,calc(100% - 28px));
+  display:flex;
+  align-items:flex-end;
+  gap:9px;
+  animation:francesco-entrata .8s ease both;
+}
+.francesco-omino {
+  font-size:65px;
+  line-height:1;
+  flex-shrink:0;
+  filter:drop-shadow(0 4px 3px #0002);
+  animation:francesco-saluto 1.8s ease-in-out infinite alternate;
+}
+.francesco-fumetto {
+  flex:1;
+  position:relative;
+  padding:15px;
+  background:white;
+  border:2px solid var(--arancio);
+  border-radius:15px 15px 15px 3px;
+  box-shadow:0 8px 28px #172f4920;
+}
+.francesco-fumetto strong {
+  display:block;
+  color:var(--mattone);
+  font-size:15px;
+}
+.francesco-fumetto p {
+  color:var(--testo);
+  font-size:12px;
+  line-height:1.5;
+  margin:7px 0 12px;
+}
+.francesco-x {
+  position:absolute;
+  top:-12px;
+  right:-7px;
+  z-index:2;
+  width:31px;
+  height:31px;
+  border:0;
+  border-radius:50%;
+  background:var(--blu);
+  color:white;
+  font-size:23px;
+  cursor:pointer;
+}
+.francesco-scelte {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+.francesco-scelte button {
+  padding:9px 7px;
+  border:1px solid var(--bordo);
+  border-radius:6px;
+  background:var(--sfondo);
+  color:var(--blu);
+  font-size:11px;
+  font-weight:900;
+  text-align:left;
+  cursor:pointer;
+}
+.francesco-scelte button:hover {
+  background:var(--giallo);
+}
+.francesco-ok {
+  margin-top:10px;
+  padding:5px 0;
+  border:0;
+  background:transparent;
+  color:var(--grigio);
+  font-size:11px;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.whatsapp-fisso {
+  position:fixed;
+  right:15px;
+  bottom:15px;
+  z-index:90;
+  padding:13px 16px;
+  border-radius:28px;
+  background:#20c765;
+  color:#10301b;
+  font-size:12px;
+  font-weight:900;
+  box-shadow:0 4px 18px #0002;
+}
+@keyframes francesco-entrata {
+  from {opacity:0;transform:translateY(25px)}
+  to {opacity:1;transform:translateY(0)}
+}
+@keyframes francesco-saluto {
+  from {transform:rotate(-4deg)}
+  to {transform:rotate(4deg) translateY(-4px)}
+}
+@media(max-width:520px) {
+  .francesco-guida {
+    left:7px;
+    bottom:7px;
+    width:calc(100% - 14px);
+    gap:5px;
+  }
+  .francesco-omino {font-size:45px}
+  .francesco-fumetto {padding:11px}
+  .francesco-fumetto strong {font-size:13px}
+  .francesco-fumetto p {font-size:11px}
+  .francesco-scelte button {font-size:10px;padding:8px 5px}
+  .whatsapp-fisso {right:7px;bottom:7px;padding:11px;font-size:10px}
+}
+</style>
 
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById("anno").textContent = new Date().getFullYear();
 
-document.querySelectorAll('.navlinks a').forEach(function(link){
-link.addEventListener('click',function(){
-document.querySelector('.navlinks').classList.remove('open');
-});
-});
+function vaiASezione(id) {
+  const sezione = document.getElementById(id);
+  if (sezione) {
+    sezione.scrollIntoView({ behavior: "smooth", block: "start" });
 
-const guideSteps=[
-{t:'Benvenuto!',m:'Scopri chi siamo e come lavoriamo.',url:'#azienda'},
-{t:'I nostri servizi',m:'Qui trovi costruzioni, impianti e finiture.',url:'#servizi'},
-{t:'Dove lavoriamo',m:'Scopri le regioni in cui valutiamo gli interventi.',url:'#territorio'},
-{t:'Contattaci',m:'Telefono, email, WhatsApp e indicazioni stradali.',url:'#contatti'}
-];
-let guideIndex=0;
-function nextGuide(){
-guideIndex=(guideIndex+1)%guideSteps.length;
-const step=guideSteps[guideIndex];
-document.querySelector('.bubble strong').textContent=step.t;
-document.getElementById('guide-text').textContent=step.m;
-document.querySelector('.bubble button').onclick=function(){
-document.querySelector(step.url).scrollIntoView({behavior:'smooth'});
-};
+    const titolo = {
+      azienda: "Chi siamo",
+      territorio: "Dove lavoriamo",
+      servizi: "I nostri servizi",
+      contatti: "Contattaci"
+    };
+
+    document.getElementById("francesco-titolo").textContent =
+      "Andiamo a: " + titolo[id] + "!";
+    document.getElementById("francesco-testo").textContent =
+      "Ecco la sezione che hai scelto. Puoi tornare qui quando vuoi.";
+
+    document.querySelectorAll(".navlinks a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.querySelector(".navlinks").classList.remove("aperto");
+      }, { once: true });
+    });
+  }
 }
-document.querySelector('.bubble button').onclick=function(){
-document.querySelector('#azienda').scrollIntoView({behavior:'smooth'});
-};
 
-const observer=new IntersectionObserver(function(entries){
-entries.forEach(function(entry){
-if(entry.isIntersecting){
-entry.target.classList.add('visible');
-observer.unobserve(entry.target);
+function chiudiFrancesco() {
+  const guida = document.getElementById("francesco");
+  if (guida) guida.remove();
 }
+
+document.querySelectorAll(".navlinks a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.querySelector(".navlinks").classList.remove("aperto");
+  });
 });
-},{threshold:.12});
-document.querySelectorAll('main section').forEach(function(section){
-section.classList.add('reveal');
-observer.observe(section);
+
+const osservatore = new IntersectionObserver(function(voci) {
+  voci.forEach(function(voce) {
+    if (voce.isIntersecting) {
+      voce.target.classList.add("visibile");
+      osservatore.unobserve(voce.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll("main section").forEach(function(sezione) {
+  sezione.classList.add("rivela");
+  osservatore.observe(sezione);
 });
 </script>
+
 </body>
 </html>
