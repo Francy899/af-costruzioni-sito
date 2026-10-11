@@ -5,279 +5,247 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111820">
 <title>A.F. Impianti e Costruzioni Srl | Edilizia e Impianti</title>
-<meta name="description" content="A.F. Impianti e Costruzioni Srl: costruzioni, ristrutturazioni, impianti elettrici, idraulici e termici, cappotti, isolamento, pavimentazioni e finiture. Contattaci per informazioni e preventivi.">
+<meta name="description" content="A.F. Impianti e Costruzioni Srl opera nel settore delle opere pubbliche e private, costruzioni, ristrutturazioni e impianti.">
 
 <style>
 :root {
-  --dark: #111820;
-  --dark2: #202a33;
-  --gold: #e8b552;
-  --gold-light: #f5d18a;
-  --light: #f5f6f7;
-  --muted: #68727b;
+  --dark:#111820;
+  --dark2:#202a33;
+  --gold:#e8b552;
+  --light:#f5f6f7;
+  --muted:#68727b;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:85px; }
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #202832;
-  background: #fff;
-  line-height: 1.65;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#202832;
+  line-height:1.65;
 }
-a { color: inherit; text-decoration: none; }
-img { display: block; width: 100%; object-fit: cover; }
-.container { width: min(1160px, 92%); margin: auto; }
+a { color:inherit; text-decoration:none; }
+img { display:block; width:100%; object-fit:cover; }
+.container { width:min(1160px,92%); margin:auto; }
+.section { padding:78px 0; }
 .eyebrow {
-  color: var(--gold);
-  font-size: .82rem;
-  letter-spacing: 2px;
-  font-weight: 800;
-  text-transform: uppercase;
+  color:var(--gold);
+  font-size:.82rem;
+  letter-spacing:2px;
+  font-weight:800;
+  text-transform:uppercase;
 }
-.section { padding: 80px 0; }
-.heading { max-width: 720px; text-align: center; margin: 0 auto 40px; }
-.heading h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.15; margin: 10px 0; }
-.heading p { color: var(--muted); }
+.heading { max-width:740px; text-align:center; margin:0 auto 40px; }
+.heading h2 { font-size:clamp(2rem,4vw,2.8rem); line-height:1.15; margin:10px 0; }
+.heading p { color:var(--muted); }
 
 /* MENU */
 header {
-  position: absolute;
-  z-index: 10;
-  top: 0; left: 0; right: 0;
-  color: white;
-  background: rgba(12,17,22,.88);
-  border-bottom: 1px solid #ffffff20;
+  position:absolute; z-index:10; top:0; left:0; right:0;
+  color:white; background:#0c1116e8;
+  border-bottom:1px solid #ffffff20;
 }
 .nav {
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  min-height:78px; display:flex; align-items:center;
+  justify-content:space-between; gap:20px;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 900; line-height: 1.15; }
-.brand-icon { font-size: 2.1rem; color: var(--gold); }
-.brand-text { font-size: 1.1rem; }
-.brand-text small { display: block; font-size: .67rem; letter-spacing: 1px; margin-top: 5px; }
-.nav-links { display: flex; align-items: center; gap: 23px; font-size: .83rem; font-weight: bold; }
-.nav-links a:hover { color: var(--gold); }
+.brand { display:flex; align-items:center; gap:10px; font-weight:900; }
+.brand-icon { font-size:2rem; color:var(--gold); }
+.brand-text { font-size:1.05rem; line-height:1.2; }
+.brand-text small { display:block; font-size:.65rem; letter-spacing:1px; margin-top:4px; }
+.nav-links { display:flex; align-items:center; gap:21px; font-size:.82rem; font-weight:bold; }
+.nav-links a:hover { color:var(--gold); }
 .menu-button {
-  display: none;
-  color: white;
-  background: transparent;
-  border: 1px solid #77818a;
-  border-radius: 7px;
-  padding: 8px 12px;
-  font-size: 1.2rem;
+  display:none; color:white; background:transparent;
+  border:1px solid #77818a; border-radius:7px; padding:8px 12px;
+  font-size:1.2rem;
 }
 
 /* PULSANTI */
 .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-  padding: 13px 20px;
-  border: 0;
-  border-radius: 7px;
-  font-weight: 800;
-  font-size: .9rem;
-  cursor: pointer;
-  transition: .2s;
+  display:inline-flex; justify-content:center; align-items:center;
+  gap:8px; padding:13px 19px; border:0; border-radius:7px;
+  font-weight:800; font-size:.9rem; cursor:pointer; transition:.2s;
 }
-.btn:hover { transform: translateY(-2px); }
-.btn-gold { background: var(--gold); color: #171d22; }
-.btn-gold:hover { background: var(--gold-light); }
-.btn-outline { color: white; border: 1px solid #ffffffaa; background: transparent; }
+.btn:hover { transform:translateY(-2px); }
+.btn-gold { background:var(--gold); color:#171d22; }
+.btn-gold:hover { background:#f5d18a; }
+.btn-outline { color:white; border:1px solid #ffffffaa; background:transparent; }
 
 /* HERO */
 .hero {
-  min-height: 680px;
-  min-height: min(760px, 100svh);
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  color: white;
-  background: #202a33;
+  min-height:690px; min-height:min(760px,100svh);
+  position:relative; display:flex; align-items:center;
+  overflow:hidden; color:white; background:#202a33;
 }
-.hero-image, .hero-video, .hero-overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.hero-image,.hero-video,.hero-overlay {
+  position:absolute; inset:0; width:100%; height:100%;
 }
 .hero-image {
-  background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=85");
-  background-position: center;
-  background-size: cover;
+  background:url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=85") center/cover;
 }
-.hero-video { object-fit: cover; z-index: 1; }
+.hero-video { object-fit:cover; z-index:1; }
 .hero-overlay {
-  z-index: 2;
-  background: linear-gradient(90deg,rgba(8,14,19,.94),rgba(8,14,19,.62) 65%,rgba(8,14,19,.3));
+  z-index:2;
+  background:linear-gradient(90deg,#080e19f0,#080e1999 65%,#080e194d);
 }
-.hero-content {
-  position: relative;
-  z-index: 3;
-  max-width: 800px;
-  padding-top: 100px;
-  padding-bottom: 65px;
-}
-.hero h1 {
-  font-size: clamp(2.5rem,6vw,4.7rem);
-  letter-spacing: -1.8px;
-  line-height: 1.06;
-  margin: 18px 0;
-}
-.hero h1 span { color: var(--gold); }
-.hero p { max-width: 650px; font-size: 1.1rem; color: #e1e5e8; margin-bottom: 28px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-content { position:relative; z-index:3; max-width:800px; padding:115px 0 65px; }
+.hero h1 { font-size:clamp(2.5rem,6vw,4.7rem); line-height:1.06; letter-spacing:-1.7px; margin:18px 0; }
+.hero h1 span { color:var(--gold); }
+.hero p { max-width:650px; color:#e1e5e8; font-size:1.1rem; }
+.hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
 
 /* VALORI */
-.values { background: var(--dark); color: white; padding: 25px 0; }
-.values-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
-.value { padding-right: 15px; border-right: 1px solid #45505a; }
-.value:last-child { border: 0; }
-.value strong { display: block; color: var(--gold); margin-bottom: 4px; }
-.value span { color: #c9d0d5; font-size: .87rem; }
+.values { background:var(--dark); color:white; padding:25px 0; }
+.values-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.value { padding-right:14px; border-right:1px solid #45505a; }
+.value:last-child { border:0; }
+.value strong { display:block; color:var(--gold); margin-bottom:4px; }
+.value span { color:#c9d0d5; font-size:.87rem; }
 
 /* CHI SIAMO */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 55px;
-  align-items: center;
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:45px; align-items:center;
 }
-.about-photo { min-height: 420px; border-radius: 15px; overflow: hidden; }
-.about-photo img { height: 420px; }
-.about-copy h2 { font-size: clamp(2rem,4vw,3rem); line-height: 1.15; margin: 12px 0 20px; }
-.about-copy p { color: var(--muted); }
-.check-list { list-style: none; padding: 0; margin: 24px 0; }
-.check-list li { margin: 10px 0; }
-.check-list li::before { content: "✓"; color: #a77922; font-weight: bold; margin-right: 10px; }
+.about-photo { min-height:420px; border-radius:15px; overflow:hidden; }
+.about-photo img { height:420px; }
+.about-copy h2 { font-size:clamp(2rem,4vw,3rem); line-height:1.15; margin:12px 0 20px; }
+.about-copy p { color:var(--muted); }
+.check-list { list-style:none; padding:0; margin:22px 0; }
+.check-list li { margin:9px 0; }
+.check-list li::before { content:"✓"; color:#a77922; font-weight:bold; margin-right:10px; }
+
+/* VISIONE E MISSIONE */
+.mission { background:#202a33; color:white; }
+.mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.mission-card { padding:28px; border:1px solid #59616a; border-radius:13px; }
+.mission-card h3 { color:var(--gold); font-size:1.4rem; margin-top:0; }
+.mission-card p { color:#d4d9dd; }
+
+/* AREE DI LAVORO */
+.areas { background:#f5f6f7; }
+.areas-intro { max-width:820px; margin:0 auto 30px; text-align:center; }
+.areas-intro p { color:var(--muted); }
+.areas-grid { display:grid; grid-template-columns:1fr 1fr; gap:35px; align-items:center; }
+.areas-photo { border-radius:15px; overflow:hidden; }
+.areas-photo img { min-height:320px; }
+.region-list { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0; }
+.region {
+  background:white; border:1px solid #e0e3e5; border-radius:25px;
+  padding:9px 14px; font-weight:700; font-size:.9rem;
+}
+.region::before { content:"●"; color:var(--gold); margin-right:8px; }
+.areas-note { font-size:.85rem; color:var(--muted); }
 
 /* SERVIZI */
-.services { background: var(--light); }
-.service-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.services { background:white; }
+.service-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 .service-card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 6px 24px #17202a0c;
-  transition: transform .25s, box-shadow .25s;
+  background:white; border-radius:15px; overflow:hidden;
+  box-shadow:0 6px 24px #17202a12; transition:transform .25s,box-shadow .25s;
 }
-.service-card:hover { transform: translateY(-6px); box-shadow: 0 15px 32px #17202a18; }
-.service-photo { overflow: hidden; }
-.service-photo img { height: 210px; transition: transform .4s; }
-.service-card:hover img { transform: scale(1.05); }
-.service-copy { padding: 22px; }
-.service-number { font-size: .77rem; font-weight: 800; color: #a77922; letter-spacing: 1px; }
-.service-copy h3 { margin: 8px 0; font-size: 1.18rem; line-height: 1.3; }
-.service-copy p { color: var(--muted); font-size: .94rem; margin-bottom: 0; }
+.service-card:hover { transform:translateY(-5px); box-shadow:0 15px 32px #17202a20; }
+.service-photo { overflow:hidden; }
+.service-photo img { height:205px; transition:transform .4s; }
+.service-card:hover img { transform:scale(1.05); }
+.service-copy { padding:22px; }
+.service-number { font-size:.77rem; font-weight:800; color:#a77922; letter-spacing:1px; }
+.service-copy h3 { margin:8px 0; font-size:1.16rem; line-height:1.3; }
+.service-copy p { color:var(--muted); font-size:.94rem; }
 
-/* GALLERIA */
-.project-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 17px; }
-.project { position: relative; min-height: 260px; overflow: hidden; border-radius: 12px; background: var(--dark2); }
-.project img { position: absolute; inset: 0; height: 100%; transition: transform .5s; }
-.project:hover img { transform: scale(1.07); }
-.project::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg,#080d13df,transparent 75%);
-}
-.project-caption { position: absolute; z-index: 1; left: 20px; right: 20px; bottom: 18px; color: white; }
-.project-caption small { color: var(--gold); }
-.project-caption h3 { margin: 4px 0; }
+/* LAVORI */
+.project-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:17px; }
+.project { position:relative; min-height:250px; overflow:hidden; border-radius:12px; background:var(--dark2); }
+.project img { position:absolute; inset:0; height:100%; transition:transform .5s; }
+.project:hover img { transform:scale(1.06); }
+.project::after { content:""; position:absolute; inset:0; background:linear-gradient(0deg,#080d13df,transparent 75%); }
+.project-caption { position:absolute; z-index:1; left:20px; bottom:18px; color:white; }
+.project-caption small { color:var(--gold); }
+.project-caption h3 { margin:4px 0; }
 
 /* CONTATTI */
-.contact { background: var(--dark); color: white; }
-.contact-grid {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 50px;
-  align-items: start;
-}
-.contact h2 { font-size: clamp(2rem,4vw,3rem); line-height: 1.15; margin: 12px 0 20px; }
-.contact-intro { color: #c7cfd5; }
-.contact-card { background: #202b35; border: 1px solid #39454f; border-radius: 15px; padding: 28px; }
-.contact-card h3 { margin-top: 0; }
-.contact-item { padding: 15px 0; border-bottom: 1px solid #39454f; overflow-wrap: anywhere; }
-.contact-item:last-child { border-bottom: 0; }
-.contact-item strong { display: block; color: var(--gold); margin-bottom: 5px; }
-.contact-item a { color: white; text-decoration: underline; text-underline-offset: 3px; }
-.contact-item a:hover { color: var(--gold); }
+.contact { background:var(--dark); color:white; }
+.contact-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:45px; align-items:start; }
+.contact h2 { font-size:clamp(2rem,4vw,3rem); line-height:1.15; margin:12px 0 20px; }
+.contact-intro { color:#c7cfd5; }
+.contact-card { background:#202b35; border:1px solid #39454f; border-radius:15px; padding:27px; }
+.contact-card h3 { margin-top:0; }
+.contact-item { padding:15px 0; border-bottom:1px solid #39454f; overflow-wrap:anywhere; }
+.contact-item:last-child { border-bottom:0; }
+.contact-item strong { display:block; color:var(--gold); margin-bottom:5px; }
+.contact-item a { color:white; text-decoration:underline; text-underline-offset:3px; }
+.contact-item a:hover { color:var(--gold); }
 .whatsapp-link {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 9px 12px;
-  border-radius: 6px;
-  background: var(--gold);
-  color: #171d22 !important;
-  text-decoration: none !important;
-  font-weight: bold;
+  display:inline-block; margin-top:8px; padding:9px 12px;
+  border-radius:6px; background:var(--gold);
+  color:#171d22 !important; text-decoration:none !important; font-weight:bold;
 }
-.address-link { display: inline-block; margin-top: 8px; }
+.address-link { display:inline-block; margin-top:8px; }
 
-/* FASCIA FINALE */
-.cta-strip { background: var(--gold); color: #17202a; padding: 30px 0; }
-.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
-.cta-inner h2 { margin: 0 0 5px; }
-.cta-inner p { margin: 0; }
-.cta-strip .btn { background: var(--dark); color: white; flex-shrink: 0; }
-footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem; }
-.footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+/* CTA E FOOTER */
+.cta-strip { background:var(--gold); color:#17202a; padding:30px 0; }
+.cta-inner { display:flex; align-items:center; justify-content:space-between; gap:25px; }
+.cta-inner h2 { margin:0 0 5px; }
+.cta-inner p { margin:0; }
+.cta-strip .btn { background:var(--dark); color:white; }
+footer { background:#0b1015; color:#c0c7cd; padding:25px 0; font-size:.86rem; }
+.footer-inner { display:flex; justify-content:space-between; gap:15px; flex-wrap:wrap; }
+
+/* WHATSAPP FISSO A DESTRA */
+.whatsapp-float {
+  position:fixed; right:22px; bottom:24px; z-index:100;
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  background:#20bd5a; color:white; font-weight:800;
+  padding:14px 19px; border-radius:50px;
+  box-shadow:0 5px 22px #0004;
+  transition:transform .2s,background .2s;
+}
+.whatsapp-float:hover { transform:translateY(-3px); background:#159e48; }
+.whatsapp-icon { font-size:1.35rem; }
 
 /* ANIMAZIONI */
-.reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease,transform .65s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *,*::before,*::after { animation: none !important; transition: none !important; }
-  .reveal { opacity: 1; transform: none; }
+.reveal { opacity:0; transform:translateY(18px); transition:opacity .6s ease,transform .6s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { animation:none !important; transition:none !important; }
+  .reveal { opacity:1; transform:none; }
 }
 
 /* TABLET */
-@media (max-width: 850px) {
-  .nav { min-height: 70px; }
-  .menu-button { display: block; }
+@media (max-width:850px) {
+  .nav { min-height:70px; }
+  .menu-button { display:block; }
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0; right: 0;
-    background: #111820;
-    padding: 18px 5%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+    display:none; position:absolute; top:70px; left:0; right:0;
+    background:#111820; padding:18px 5%;
+    flex-direction:column; align-items:stretch; gap:0;
   }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: 12px 0; }
-  .values-grid { grid-template-columns: repeat(2,1fr); }
-  .value { border-right: 0; }
-  .about-grid,.contact-grid { grid-template-columns: 1fr; gap: 30px; }
-  .service-grid,.project-grid { grid-template-columns: repeat(2,1fr); }
-  .cta-inner { flex-direction: column; align-items: flex-start; }
+  .nav-links.open { display:flex; }
+  .nav-links a { padding:12px 0; }
+  .values-grid { grid-template-columns:repeat(2,1fr); }
+  .value { border-right:0; }
+  .about-grid,.areas-grid,.contact-grid { grid-template-columns:1fr; gap:28px; }
+  .service-grid,.project-grid { grid-template-columns:repeat(2,1fr); }
+  .cta-inner { flex-direction:column; align-items:flex-start; }
 }
 
-/* SMARTPHONE */
-@media (max-width: 540px) {
-  .section { padding: 58px 0; }
-  .hero { min-height: 700px; }
-  .hero-content { padding-top: 110px; }
-  .hero h1 { letter-spacing: -1px; }
-  .hero-actions .btn { width: 100%; }
-  .values-grid { gap: 20px 12px; }
-  .service-grid,.project-grid { grid-template-columns: 1fr; }
-  .service-photo img { height: 225px; }
-  .project { min-height: 240px; }
-  .brand-text { font-size: .95rem; }
-  .brand-text small { font-size: .59rem; }
-  .brand-icon { font-size: 1.6rem; }
-  .contact-card { padding: 21px; }
+/* TELEFONI */
+@media (max-width:540px) {
+  .section { padding:58px 0; }
+  .hero { min-height:700px; }
+  .hero-content { padding-top:110px; }
+  .hero h1 { letter-spacing:-1px; }
+  .hero-actions .btn { width:100%; }
+  .values-grid { gap:20px 12px; }
+  .service-grid,.project-grid,.mission-grid { grid-template-columns:1fr; }
+  .service-photo img { height:220px; }
+  .project { min-height:240px; }
+  .brand-text { font-size:.9rem; }
+  .brand-text small { font-size:.57rem; }
+  .brand-icon { font-size:1.5rem; }
+  .contact-card { padding:20px; }
+  .whatsapp-float { right:13px; bottom:15px; padding:12px 15px; font-size:.86rem; }
 }
 </style>
 </head>
@@ -287,18 +255,13 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
   <div class="container nav">
     <a class="brand" href="#home" aria-label="A.F. Impianti e Costruzioni">
       <span class="brand-icon">◆</span>
-      <span class="brand-text">
-        A.F.
-        <small>IMPIANTI E COSTRUZIONI SRL</small>
-      </span>
+      <span class="brand-text">A.F.<small>IMPIANTI E COSTRUZIONI SRL</small></span>
     </a>
-
-    <button class="menu-button" id="menuButton"
-      aria-label="Apri menu" aria-expanded="false">☰</button>
-
+    <button class="menu-button" id="menuButton" aria-label="Apri menu" aria-expanded="false">☰</button>
     <nav class="nav-links" id="navLinks" aria-label="Menu principale">
       <a href="#home">HOME</a>
       <a href="#chi-siamo">CHI SIAMO</a>
+      <a href="#aree">DOVE LAVORIAMO</a>
       <a href="#servizi">SERVIZI</a>
       <a href="#lavori">I NOSTRI LAVORI</a>
       <a href="#contatti">CONTATTI</a>
@@ -307,22 +270,26 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
 </header>
 
 <main>
-  <!-- INTRODUZIONE CON SFONDO -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-image" aria-hidden="true"></div>
 
-    <!-- Quando avrai il video MP4, inserisci qui il tag video indicato sotto. -->
+    <!-- VIDEO FACOLTATIVO: inserisci qui un video MP4 caricato nel repository -->
+    <!--
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+      <source src="video-cantiere.mp4" type="video/mp4">
+    </video>
+    -->
 
     <div class="hero-overlay"></div>
-
     <div class="container">
       <div class="hero-content reveal">
         <span class="eyebrow">A.F. IMPIANTI E COSTRUZIONI SRL</span>
         <h1>Costruiamo oggi.<br><span>Realizziamo il tuo domani.</span></h1>
         <p>
-          Costruzioni, ristrutturazioni e impianti.
-          Soluzioni per i tuoi progetti, con attenzione
-          alla qualità, alla funzionalità e ai dettagli.
+          Opere pubbliche e private, costruzioni, ristrutturazioni
+          e impianti. Competenza tecnica, attenzione alla qualità
+          e cura dei dettagli in ogni progetto.
         </p>
         <div class="hero-actions">
           <a class="btn btn-gold" href="#contatti">RICHIEDI INFORMAZIONI →</a>
@@ -335,40 +302,125 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
   <!-- PUNTI DI FORZA -->
   <section class="values">
     <div class="container values-grid">
-      <div class="value"><strong>Professionalità</strong><span>Attenzione in ogni fase del lavoro</span></div>
+      <div class="value"><strong>Professionalità</strong><span>Competenza tecnica e attenzione</span></div>
       <div class="value"><strong>Qualità</strong><span>Cura dei materiali e delle finiture</span></div>
-      <div class="value"><strong>Precisione</strong><span>Organizzazione e cura dei dettagli</span></div>
-      <div class="value"><strong>Assistenza</strong><span>Disponibilità e dialogo con il cliente</span></div>
+      <div class="value"><strong>Sicurezza</strong><span>Rispetto delle normative applicabili</span></div>
+      <div class="value"><strong>Affidabilità</strong><span>Organizzazione e dialogo con il cliente</span></div>
     </div>
   </section>
 
-  <!-- CHI SIAMO -->
+  <!-- STORIA E PRESENTAZIONE -->
   <section class="section" id="chi-siamo">
     <div class="container about-grid">
       <div class="about-photo reveal">
         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85"
-             alt="Edificio e progetto architettonico" loading="lazy">
+             alt="Progetto architettonico ed edilizio" loading="lazy">
       </div>
       <div class="about-copy reveal">
         <span class="eyebrow">CHI SIAMO</span>
-        <h2>Il tuo progetto, la nostra attenzione.</h2>
+        <h2>Esperienza, visione e attenzione al futuro.</h2>
         <p>
-          A.F. Impianti e Costruzioni Srl si occupa di lavori
-          edili e impiantistici, offrendo soluzioni per diverse
-          esigenze di costruzione, ristrutturazione e finitura.
+          A.F. Impianti e Costruzioni Srl è un'impresa edile
+          che opera nel settore delle opere pubbliche e private,
+          con l'obiettivo di affrontare ogni progetto con
+          competenza tecnica, affidabilità e passione per la qualità.
         </p>
         <p>
-          Ogni progetto merita attenzione: dalla scelta degli
-          interventi alla cura dei dettagli, lavoriamo per
-          realizzare spazi funzionali e curati.
+          Ogni intervento viene affrontato con un approccio
+          integrato che unisce pianificazione accurata, rispetto
+          delle normative, attenzione alla sicurezza e cura
+          dei dettagli costruttivi.
+        </p>
+        <p>
+          L'obiettivo è realizzare opere funzionali, durature
+          e sostenibili, in linea con le esigenze dei committenti
+          e delle comunità.
         </p>
         <ul class="check-list">
-          <li>Costruzioni e ristrutturazioni</li>
-          <li>Impianti elettrici, idraulici e termici</li>
-          <li>Cappotti e isolamento</li>
-          <li>Pavimentazioni e finiture</li>
+          <li>Attenzione alle esigenze del cliente</li>
+          <li>Organizzazione e pianificazione del lavoro</li>
+          <li>Qualità, sicurezza e cura dei dettagli</li>
+          <li>Soluzioni orientate alla durata e alla funzionalità</li>
         </ul>
         <a class="btn btn-gold" href="#contatti">PARLIAMO DEL TUO PROGETTO →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIONE E MISSIONE -->
+  <section class="section mission">
+    <div class="container">
+      <div class="heading reveal">
+        <span class="eyebrow">I NOSTRI PRINCIPI</span>
+        <h2>Visione e missione</h2>
+        <p>Costruiamo valore attraverso qualità, responsabilità e attenzione al territorio.</p>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-card reveal">
+          <h3>La nostra visione</h3>
+          <p>
+            Contribuire allo sviluppo del territorio attraverso
+            infrastrutture moderne, sicure e sostenibili, diventando
+            un punto di riferimento nel settore delle costruzioni
+            e degli impianti. Vogliamo contribuire a migliorare
+            la qualità della vita, unendo innovazione, responsabilità
+            e rispetto per l'ambiente.
+          </p>
+        </article>
+        <article class="mission-card reveal">
+          <h3>La nostra missione</h3>
+          <p>
+            Realizzare opere pubbliche e private con attenzione
+            alla qualità, competenza tecnica, affidabilità e
+            trasparenza in ogni fase del progetto. Ci impegniamo
+            a rispondere alle esigenze dei clienti attraverso
+            soluzioni efficienti e durature, valorizzando il lavoro
+            di squadra, la sicurezza e il miglioramento continuo.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOVE LAVORIAMO -->
+  <section class="section areas" id="aree">
+    <div class="container">
+      <div class="heading reveal">
+        <span class="eyebrow">IL NOSTRO TERRITORIO</span>
+        <h2>Dove lavoriamo</h2>
+        <p>Un'impresa orientata a operare in diverse aree del territorio nazionale.</p>
+      </div>
+      <div class="areas-grid">
+        <div class="areas-photo reveal">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85"
+               alt="Edifici e infrastrutture" loading="lazy">
+        </div>
+        <div class="reveal">
+          <h3>Opere pubbliche e private in diverse aree d'Italia</h3>
+          <p>
+            A.F. Impianti e Costruzioni Srl opera nel settore
+            delle opere pubbliche e private, con attenzione
+            alle esigenze dei committenti e alle caratteristiche
+            di ogni intervento.
+          </p>
+          <p>
+            Le aree indicate nella presentazione aziendale
+            comprendono le seguenti regioni:
+          </p>
+          <div class="region-list">
+            <span class="region">Lombardia</span>
+            <span class="region">Veneto</span>
+            <span class="region">Liguria</span>
+            <span class="region">Lazio</span>
+            <span class="region">Calabria</span>
+          </div>
+          <p class="areas-note">
+            Le aree elencate riprendono la presentazione aziendale.
+            La disponibilità per un nuovo intervento va confermata
+            direttamente con l'impresa.
+          </p>
+          <a class="btn btn-gold" href="#contatti">CHIEDI INFORMAZIONI →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -381,72 +433,30 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
         <h2>Soluzioni per ogni esigenza</h2>
         <p>Un punto di riferimento per lavori edili, impianti e finiture.</p>
       </div>
-
       <div class="service-grid">
         <article class="service-card reveal">
-          <div class="service-photo">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Cantiere edile">
-          </div>
-          <div class="service-copy">
-            <span class="service-number">01 / EDILIZIA</span>
-            <h3>Costruzioni e ristrutturazioni</h3>
-            <p>Interventi edili per rinnovare, trasformare e realizzare spazi abitativi e professionali.</p>
-          </div>
+          <div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Cantiere edile"></div>
+          <div class="service-copy"><span class="service-number">01 / EDILIZIA</span><h3>Costruzioni e ristrutturazioni</h3><p>Interventi edili per rinnovare, trasformare e realizzare spazi abitativi e professionali.</p></div>
         </article>
-
         <article class="service-card reveal">
-          <div class="service-photo">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Lavori su impianto elettrico">
-          </div>
-          <div class="service-copy">
-            <span class="service-number">02 / ELETTRICITÀ</span>
-            <h3>Impianti elettrici</h3>
-            <p>Installazione e interventi su impianti elettrici per ambienti residenziali e professionali.</p>
-          </div>
+          <div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Impianto elettrico"></div>
+          <div class="service-copy"><span class="service-number">02 / ELETTRICITÀ</span><h3>Impianti elettrici</h3><p>Installazione e interventi su impianti elettrici per ambienti residenziali e professionali.</p></div>
         </article>
-
         <article class="service-card reveal">
-          <div class="service-photo">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80" alt="Lavori idraulici">
-          </div>
-          <div class="service-copy">
-            <span class="service-number">03 / IMPIANTI</span>
-            <h3>Impianti idraulici e termici</h3>
-            <p>Soluzioni per impianti idraulici, riscaldamento e comfort degli ambienti.</p>
-          </div>
+          <div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80" alt="Impianto idraulico"></div>
+          <div class="service-copy"><span class="service-number">03 / IMPIANTI</span><h3>Impianti idraulici e termici</h3><p>Soluzioni per impianti idraulici, riscaldamento e comfort degli ambienti.</p></div>
         </article>
-
         <article class="service-card reveal">
-          <div class="service-photo">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Lavori edili e isolamento">
-          </div>
-          <div class="service-copy">
-            <span class="service-number">04 / EFFICIENZA</span>
-            <h3>Cappotti e isolamento</h3>
-            <p>Interventi per migliorare l'isolamento e il comfort termico degli edifici.</p>
-          </div>
+          <div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Lavori in cantiere"></div>
+          <div class="service-copy"><span class="service-number">04 / EFFICIENZA</span><h3>Cappotti e isolamento</h3><p>Interventi per migliorare l'isolamento e il comfort termico degli edifici.</p></div>
         </article>
-
         <article class="service-card reveal">
-          <div class="service-photo">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Interni e finiture">
-          </div>
-          <div class="service-copy">
-            <span class="service-number">05 / FINITURE</span>
-            <h3>Pavimentazioni e finiture</h3>
-            <p>Cura delle superfici e dei dettagli per ambienti armoniosi e funzionali.</p>
-          </div>
+          <div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Interni e finiture"></div>
+          <div class="service-copy"><span class="service-number">05 / FINITURE</span><h3>Pavimentazioni e finiture</h3><p>Cura delle superfici e dei dettagli per ambienti armoniosi e funzionali.</p></div>
         </article>
-
         <article class="service-card reveal">
-          <div class="service-photo">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Attività in cantiere">
-          </div>
-          <div class="service-copy">
-            <span class="service-number">06 / ALTRI INTERVENTI</span>
-            <h3>Lavori edili di altro tipo</h3>
-            <p>Altri interventi edili da valutare in base alle caratteristiche del progetto.</p>
-          </div>
+          <div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Attività in cantiere"></div>
+          <div class="service-copy"><span class="service-number">06 / ALTRI INTERVENTI</span><h3>Lavori edili di altro tipo</h3><p>Altri interventi edili da valutare in base alle caratteristiche del progetto.</p></div>
         </article>
       </div>
     </div>
@@ -458,34 +468,15 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
       <div class="heading reveal">
         <span class="eyebrow">I NOSTRI LAVORI</span>
         <h2>Progetti e realizzazioni</h2>
-        <p>Immagini dimostrative a tema edilizia, da sostituire con le fotografie reali dei vostri cantieri.</p>
+        <p>Immagini dimostrative da sostituire con fotografie reali dei vostri cantieri.</p>
       </div>
-
       <div class="project-grid">
-        <article class="project reveal">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80" alt="Cantiere edile">
-          <div class="project-caption"><small>EDILIZIA</small><h3>Costruzioni</h3></div>
-        </article>
-        <article class="project reveal">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Ambiente interno moderno">
-          <div class="project-caption"><small>RISTRUTTURAZIONI</small><h3>Spazi rinnovati</h3></div>
-        </article>
-        <article class="project reveal">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80" alt="Lavorazioni elettriche">
-          <div class="project-caption"><small>IMPIANTI</small><h3>Impianti elettrici</h3></div>
-        </article>
-        <article class="project reveal">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80" alt="Lavorazioni idrauliche">
-          <div class="project-caption"><small>IMPIANTI</small><h3>Idraulica e termica</h3></div>
-        </article>
-        <article class="project reveal">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Interni e finiture">
-          <div class="project-caption"><small>FINITURE</small><h3>Interni</h3></div>
-        </article>
-        <article class="project reveal">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Operai al lavoro in cantiere">
-          <div class="project-caption"><small>CANTIERE</small><h3>Lavori edili</h3></div>
-        </article>
+        <article class="project reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80" alt="Cantiere edile"><div class="project-caption"><small>EDILIZIA</small><h3>Costruzioni</h3></div></article>
+        <article class="project reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Ambiente interno"><div class="project-caption"><small>RISTRUTTURAZIONI</small><h3>Spazi rinnovati</h3></div></article>
+        <article class="project reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80" alt="Lavorazioni elettriche"><div class="project-caption"><small>IMPIANTI</small><h3>Impianti elettrici</h3></div></article>
+        <article class="project reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80" alt="Lavorazioni idrauliche"><div class="project-caption"><small>IMPIANTI</small><h3>Idraulica e termica</h3></div></article>
+        <article class="project reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Interni e finiture"><div class="project-caption"><small>FINITURE</small><h3>Interni</h3></div></article>
+        <article class="project reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Cantiere"><div class="project-caption"><small>CANTIERE</small><h3>Lavori edili</h3></div></article>
       </div>
     </div>
   </section>
@@ -501,32 +492,25 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
           con competenza e professionalità. Contattaci per
           informazioni e per parlare del tuo prossimo progetto.
         </p>
-        <p class="contact-intro">
-          Costruire il tuo futuro inizia da una semplice richiesta.
-        </p>
+        <p class="contact-intro">Costruire il tuo futuro inizia da una semplice richiesta.</p>
         <a class="btn btn-gold" href="tel:+393895313550">☎ CHIAMACI ORA</a>
       </div>
-
       <div class="contact-card reveal">
         <h3>A.F. Impianti e Costruzioni Srl</h3>
-
         <div class="contact-item">
           <strong>☎ Numero di cellulare</strong>
           <a href="tel:+393895313550">+39 389 5313550</a><br>
           <a class="whatsapp-link" href="https://wa.me/393895313550" target="_blank" rel="noopener noreferrer">Scrivici su WhatsApp →</a>
         </div>
-
         <div class="contact-item">
           <strong>✉ Indirizzo e-mail</strong>
           <a href="mailto:a.f.costruzioneimpianti@gmail.com">a.f.costruzioneimpianti@gmail.com</a>
         </div>
-
         <div class="contact-item">
           <strong>⌖ Indirizzo</strong>
           <span>Via Dir. S. Anna II Tronco 20/E, 89128</span><br>
           <a class="address-link" href="https://www.google.com/maps/search/?api=1&query=Via+Dir.+S.+Anna+II+Tronco+20%2FE+89128" target="_blank" rel="noopener noreferrer">Cerca l'indirizzo su Google Maps →</a>
         </div>
-
         <p style="font-size:.8rem;color:#bac3ca">
           Verifica la posizione su Maps prima di pubblicare:
           la città non è indicata chiaramente nella foto.
@@ -535,7 +519,6 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
     </div>
   </section>
 
-  <!-- INVITO FINALE -->
   <section class="cta-strip">
     <div class="container cta-inner">
       <div>
@@ -554,15 +537,25 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
   </div>
 </footer>
 
+<!-- PULSANTE WHATSAPP FISSO: resta visibile mentre si scorre -->
+<a class="whatsapp-float"
+   href="https://wa.me/393895313550"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contatta A.F. Impianti e Costruzioni su WhatsApp">
+  <span class="whatsapp-icon">☏</span>
+  <span>WhatsApp</span>
+</a>
+
 <script>
   // Menu per smartphone
   const menuButton = document.getElementById("menuButton");
   const navLinks = document.getElementById("navLinks");
 
   menuButton.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", String(isOpen));
-    menuButton.textContent = isOpen ? "✕" : "☰";
+    const open = navLinks.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.textContent = open ? "✕" : "☰";
   });
 
   navLinks.querySelectorAll("a").forEach(link => {
@@ -573,9 +566,8 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
     });
   });
 
-  // Animazioni durante lo scorrimento
-  const revealItems = document.querySelectorAll(".reveal");
-
+  // Animazioni allo scorrimento
+  const items = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -585,13 +577,12 @@ footer { background: #0b1015; color: #c0c7cd; padding: 25px 0; font-size: .86rem
         }
       });
     }, { threshold: 0.12 });
-
-    revealItems.forEach(item => observer.observe(item));
+    items.forEach(item => observer.observe(item));
   } else {
-    revealItems.forEach(item => item.classList.add("visible"));
+    items.forEach(item => item.classList.add("visible"));
   }
 
-  // Anno automatico nel footer
+  // Anno automatico
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
