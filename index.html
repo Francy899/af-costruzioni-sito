@@ -5,82 +5,26 @@
 @media(max-width:900px){.menu{display:block}.links{display:none;width:100%;flex-direction:column;align-items:stretch}.links.open{display:flex}.nav{flex-wrap:wrap}.hero{min-height:610px;background-position:57% center}.pillargrid{grid-template-columns:repeat(2,1fr)}.pillar:nth-child(2){border:0}.about,.contactgrid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.brand img{width:44px;height:44px}.brand{font-size:12px}.brand small{font-size:8px}.hero{min-height:650px;background-image:linear-gradient(90deg,#052b4de8,#07345b9c),url('assets/cantiere-francesco.jpg');background-position:56% center}.inner{padding:45px 18px 55px}.hero h1{font-size:clamp(39px,11vw,57px);letter-spacing:-1px}.hero p{font-size:16px}.pillargrid{padding:10px}.pillar{padding:12px 8px}.pillar b{font-size:13px}.pillar small{font-size:11px}.section{padding:50px 18px}.cards{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.form{padding:16px}.frank{left:10px;right:10px;bottom:75px;max-width:none}.wa{right:10px;bottom:10px;padding:12px}.actions .btn{width:100%;justify-content:center}}
 
-.shop-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
-.shopgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
-.product{background:white;border:1px solid #eadbc7;border-radius:22px;overflow:hidden;box-shadow:0 12px 30px #07345b12;display:flex;flex-direction:column}
-.product .pic{height:150px;background:linear-gradient(135deg,#fff2df,#ffe0b0);display:grid;place-items:center;font-size:64px}
-.product .body{padding:20px;display:flex;flex-direction:column;flex:1}
-.product h3{margin:0 0 8px;color:var(--n)}
-.product p{margin:0 0 15px;color:#587087;line-height:1.55;font-size:14px}
-.price{font-weight:900;color:var(--o);font-size:18px;margin-bottom:15px}
-.product button{margin-top:auto;border:0;cursor:pointer}
-.cart{margin-top:28px;background:#07345b;color:white;border-radius:24px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.cart strong{font-size:20px}.cart small{display:block;color:#dbeeff;margin-top:5px}
-.cart .btn{background:var(--o);color:white;border:0}
-.shopnote{margin-top:14px;color:#587087;font-size:13px}
-@media(max-width:900px){.shopgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.shopgrid{grid-template-columns:1fr}.product .pic{height:130px}}
+.hero{min-height:650px}
+.hero-mascot{position:absolute;left:max(1vw,calc((100vw - 1250px)/2 - 20px));bottom:-5px;width:clamp(300px,38vw,520px);max-height:650px;object-fit:contain;object-position:center bottom;z-index:2;filter:drop-shadow(0 18px 20px rgba(0,0,0,.28));pointer-events:none}
+.hero .inner{position:relative;z-index:3;margin-left:max(0px,calc((100vw - 1250px)/2 + 470px));width:min(700px,calc(100% - 500px));padding-top:85px;padding-bottom:95px}
+@media(max-width:900px){
+.hero{min-height:720px;align-items:flex-end}
+.hero-mascot{width:310px;left:50%;transform:translateX(-50%);bottom:0;opacity:.98}
+.hero .inner{width:100%;margin:0;padding:35px 24px 360px;background:linear-gradient(180deg,transparent 0%,rgba(5,43,75,.78) 42%,rgba(5,43,75,.92) 100%)}
+}
+@media(max-width:560px){
+.hero{min-height:760px}
+.hero-mascot{width:300px}
+.hero .inner{padding-bottom:340px}
+}
 </style></head><body>
-<header class="top"><nav class="nav"><a class="brand" href="#home"><img src="assets/logo-af.jpg" alt="Logo A.F." onerror="this.style.display='none'"><span>A.F. IMPIANTI E COSTRUZIONI<small>EDILIZIA · IMPIANTI · INFRASTRUTTURE</small></span></a><button class="menu" id="menu">☰ Menu</button><div class="links" id="links"><a href="#home">Home</a><a href="#chi-siamo">Chi siamo</a><a href="#dove">Dove lavoriamo</a><a href="#servizi">Cosa sappiamo fare</a><a href="#shop">Shop</a><a href="#squadra">Unisciti alla squadra</a><a href="#contatti">Contattaci</a><a class="cta" href="#contatti">☎ Richiedi un preventivo</a></div></nav></header>
-<main><section class="hero" id="home"><div class="inner"><span class="eyebrow">IL PARTNER PER I TUOI PROGETTI</span><h1>Costruiamo valore.<br><span>Costruiamo futuro.</span></h1><p><b>A.F. Impianti e Costruzioni Srl</b><br>Edilizia, impianti e infrastrutture. Soluzioni su misura per enti pubblici e privati, con competenza, affidabilità e passione.</p><div class="actions"><a class="btn orange" href="#servizi">⚒ Scopri i nostri servizi →</a><a class="btn outline" href="#contatti">Parla con noi →</a></div></div></section>
+<header class="top"><nav class="nav"><a class="brand" href="#home"><img src="assets/logo-af.jpg" alt="Logo A.F." onerror="this.style.display='none'"><span>A.F. IMPIANTI E COSTRUZIONI<small>EDILIZIA · IMPIANTI · INFRASTRUTTURE</small></span></a><button class="menu" id="menu">☰ Menu</button><div class="links" id="links"><a href="#home">Home</a><a href="#chi-siamo">Chi siamo</a><a href="#dove">Dove lavoriamo</a><a href="#servizi">Cosa sappiamo fare</a><a href="#squadra">Unisciti alla squadra</a><a href="#contatti">Contattaci</a><a class="cta" href="#contatti">☎ Richiedi un preventivo</a></div></nav></header>
+<main><section class="hero" id="home"><img class="hero-mascot" src="assets/francesco-af.png" alt="Francesco, mascotte A.F. Impianti e Costruzioni"><div class="inner"><span class="eyebrow">IL PARTNER PER I TUOI PROGETTI</span><h1>Costruiamo valore.<br><span>Costruiamo futuro.</span></h1><p><b>A.F. Impianti e Costruzioni Srl</b><br>Edilizia, impianti e infrastrutture. Soluzioni su misura per enti pubblici e privati, con competenza, affidabilità e passione.</p><div class="actions"><a class="btn orange" href="#servizi">⚒ Scopri i nostri servizi →</a><a class="btn outline" href="#contatti">Parla con noi →</a></div></div></section>
 <section class="pillars"><div class="pillargrid"><div class="pillar"><b>♧ Sicurezza al primo posto</b><small>Cantieri sicuri, persone protette</small></div><div class="pillar"><b>✓ Qualità e affidabilità</b><small>L'esperienza su cui puoi contare</small></div><div class="pillar"><b>♙ Soluzioni su misura</b><small>Per ogni esigenza pubblica o privata</small></div><div class="pillar"><b>♧ Rispetto per il territorio</b><small>Costruiamo un futuro sostenibile</small></div></div></section>
 <section class="section" id="chi-siamo"><div class="about"><div><span class="kicker">Chi siamo</span><h2>Una realtà concreta, con grandi obiettivi.</h2><p class="lead">Lavoriamo con serietà, competenza tecnica e attenzione ai dettagli per realizzare interventi affidabili e duraturi. Ogni progetto nasce dall'ascolto delle esigenze del cliente e dalla cura del lavoro.</p><a class="btn" style="background:var(--n);color:white" href="#contatti">Parliamo del tuo progetto →</a></div><div class="facts"><div class="fact"><b>Su misura</b>Soluzioni pensate per ogni progetto</div><div class="fact"><b>Qualità</b>Attenzione a dettagli e finiture</div><div class="fact"><b>Sicurezza</b>Rispetto delle regole di cantiere</div><div class="fact"><b>Affidabilità</b>Comunicazione chiara e trasparente</div></div></div></section>
 <section class="area" id="dove"><div class="section"><span class="kicker">Dove lavoriamo</span><h2>Presenti in diverse regioni d'Italia.</h2><p class="lead">Operiamo in più aree del territorio nazionale, con organizzazione e attenzione alle necessità di ogni committente.</p><div class="tags"><span class="tag">Lombardia</span><span class="tag">Veneto</span><span class="tag">Liguria</span><span class="tag">Lazio</span><span class="tag">Calabria</span><span class="tag">Basilicata</span><span class="tag">Sicilia</span></div></div></section>
 <section class="section" id="servizi"><span class="kicker">Cosa sappiamo fare</span><h2>Competenze per costruire e migliorare.</h2><p class="lead">Un unico interlocutore per lavori edili e impiantistici, dalla pianificazione alla realizzazione.</p><div class="cards"><article class="card"><div class="symbol">🏗️</div><h3>Edilizia e ristrutturazioni</h3><p>Costruzione, recupero e ristrutturazione per spazi funzionali e durevoli.</p></article><article class="card"><div class="symbol">⚡</div><h3>Impianti elettrici</h3><p>Installazione e interventi con attenzione a sicurezza e qualità.</p></article><article class="card"><div class="symbol">🚿</div><h3>Impianti idraulici e termici</h3><p>Soluzioni per impianti idrici, riscaldamento e comfort.</p></article><article class="card"><div class="symbol">🧱</div><h3>Cappotto e isolamento</h3><p>Interventi per migliorare protezione, comfort ed efficienza.</p></article><article class="card"><div class="symbol">🪜</div><h3>Pavimenti e finiture</h3><p>Finiture curate e lavorazioni adeguate agli spazi.</p></article><article class="card"><div class="symbol">🚜</div><h3>Altre opere edili</h3><p>Lavorazioni personalizzate in base al progetto.</p></article></div></section>
-
-<section class="section" id="shop">
-  <div class="shop-head">
-    <div>
-      <span class="kicker">Shop A.F.</span>
-      <h2>Acquista con A.F.</h2>
-      <p class="lead">Scopri i prodotti disponibili e inviaci il tuo ordine direttamente su WhatsApp.</p>
-    </div>
-  </div>
-  <div class="shopgrid">
-    <article class="product">
-      <div class="pic">🦺</div>
-      <div class="body">
-        <h3>DPI e sicurezza</h3>
-        <p>Caschi, gilet, guanti e altri dispositivi per il lavoro.</p>
-        <div class="price">Prezzo su richiesta</div>
-        <button class="btn orange" onclick="addProduct('DPI e sicurezza')">Aggiungi all’ordine</button>
-      </div>
-    </article>
-    <article class="product">
-      <div class="pic">👕</div>
-      <div class="body">
-        <h3>Abbigliamento da lavoro</h3>
-        <p>Divise e abbigliamento professionale personalizzabile.</p>
-        <div class="price">Prezzo su richiesta</div>
-        <button class="btn orange" onclick="addProduct('Abbigliamento da lavoro')">Aggiungi all’ordine</button>
-      </div>
-    </article>
-    <article class="product">
-      <div class="pic">🔧</div>
-      <div class="body">
-        <h3>Attrezzatura</h3>
-        <p>Utensili e attrezzature per cantiere e manutenzione.</p>
-        <div class="price">Prezzo su richiesta</div>
-        <button class="btn orange" onclick="addProduct('Attrezzatura')">Aggiungi all’ordine</button>
-      </div>
-    </article>
-    <article class="product">
-      <div class="pic">🏗️</div>
-      <div class="body">
-        <h3>Prodotti personalizzati</h3>
-        <p>Articoli personalizzati con il logo A.F. Impianti e Costruzioni.</p>
-        <div class="price">Prezzo su richiesta</div>
-        <button class="btn orange" onclick="addProduct('Prodotti personalizzati')">Aggiungi all’ordine</button>
-      </div>
-    </article>
-  </div>
-  <div class="cart">
-    <div><strong>🛒 Il tuo ordine: <span id="cartCount">0</span></strong><small id="cartItems">Nessun prodotto selezionato.</small></div>
-    <button class="btn" style="background:var(--o);color:white;border:0" onclick="sendShopOrder()">Invia ordine su WhatsApp →</button>
-  </div>
-  <p class="shopnote">I prodotti e i prezzi mostrati sono una struttura iniziale: quando mi dirai cosa vuoi vendere, posso sostituirli con articoli, foto e prezzi reali.</p>
-</section>
-
 <section class="join" id="squadra" style="background:linear-gradient(120deg,#07345b,#075b9c);color:white"><div class="section"><span class="kicker" style="color:#ffbd58">Lavora con noi</span><h2 style="color:white">Unisciti alla squadra.</h2><p class="lead" style="color:white">Raccontaci chi sei e inviaci la tua candidatura tramite WhatsApp.</p><div class="form"><form id="joinForm"><div class="fields"><div class="field"><label for="nome">Nome</label><input id="nome" required></div><div class="field"><label for="cognome">Cognome</label><input id="cognome" required></div><div class="field"><label for="nascita">Data di nascita</label><input id="nascita" type="date" required></div><div class="field"><label for="residenza">Residenza</label><input id="residenza" required></div><div class="field full"><label for="racconto">Parlaci di te</label><textarea id="racconto" required placeholder="Esperienze, competenze, disponibilità..."></textarea></div><div class="field full"><button class="btn orange" type="submit">Invia candidatura su WhatsApp →</button><p class="note">WhatsApp si aprirà con il messaggio pronto: premi Invia nella chat per completare.</p></div></div></form></div></div></section>
 <section class="section" id="contatti"><span class="kicker">Contattaci</span><h2>Parliamo del tuo prossimo progetto.</h2><div class="contactgrid"><div class="contactlist"><a class="contact" href="tel:+393895313550"><b>☎ Telefono</b>+39 389 5313550</a><a class="contact" href="mailto:a.f.costruzioneimpianti@gmail.com"><b>✉ Email</b>a.f.costruzioneimpianti@gmail.com</a><a class="contact" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Via+Dir.+S.+Anna+II+Tronco+20%2FE%2C+89128+Reggio+Calabria"><b>⌖ Indirizzo e navigazione</b>Via Dir. S. Anna II Tronco 20/E, 89128 Reggio Calabria<br><u>Apri Google Maps</u></a><a class="contact" target="_blank" rel="noopener" href="https://wa.me/393895313550"><b>WhatsApp</b>Scrivici direttamente</a></div><div class="form"><form id="contactForm"><div class="fields"><div class="field"><label for="cnome">Nome</label><input id="cnome" required></div><div class="field"><label for="ccognome">Cognome</label><input id="ccognome" required></div><div class="field full"><label for="tel">Numero di telefono</label><input id="tel" type="tel" required></div><div class="field full"><label for="desc">Descrizione del lavoro</label><textarea id="desc" required></textarea></div><div class="field full"><button class="btn" style="background:var(--n);color:white" type="submit">Prepara email →</button><p class="note">Si aprirà il programma email con il messaggio compilato; conferma l'invio.</p></div></div></form></div></div></section></main>
 <footer>© <span id="year"></span> A.F. Impianti e Costruzioni Srl · Edilizia · Impianti · Infrastrutture</footer>
@@ -89,17 +33,4 @@
 const links=document.getElementById('links');document.getElementById('menu').onclick=()=>links.classList.toggle('open');links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('close').onclick=()=>{document.getElementById('frank').style.display='none';document.getElementById('reopen').style.display='block'};document.getElementById('reopen').onclick=()=>{document.getElementById('frank').style.display='flex';document.getElementById('reopen').style.display='none'};
 document.getElementById('joinForm').onsubmit=e=>{e.preventDefault();const v=id=>document.getElementById(id).value;const msg=`CANDIDATURA - A.F. Impianti e Costruzioni Srl\nNome: ${v('nome')}\nCognome: ${v('cognome')}\nData di nascita: ${v('nascita')}\nResidenza: ${v('residenza')}\nParlaci di te: ${v('racconto')}`;window.open('https://wa.me/393895313550?text='+encodeURIComponent(msg),'_blank')};
 document.getElementById('contactForm').onsubmit=e=>{e.preventDefault();const v=id=>document.getElementById(id).value;const msg=`Nome: ${v('cnome')}\nCognome: ${v('ccognome')}\nTelefono: ${v('tel')}\nDescrizione del lavoro: ${v('desc')}`;location.href='mailto:a.f.costruzioneimpianti@gmail.com?subject='+encodeURIComponent('Richiesta preventivo')+'&body='+encodeURIComponent(msg)};
-
-const shopCart=[];
-function addProduct(name){
-  shopCart.push(name);
-  document.getElementById('cartCount').textContent=shopCart.length;
-  document.getElementById('cartItems').textContent=shopCart.join(', ');
-}
-function sendShopOrder(){
-  if(!shopCart.length){ alert('Seleziona almeno un prodotto.'); return; }
-  const msg='ORDINE SHOP - A.F. Impianti e Costruzioni Srl\n\nProdotti richiesti:\n- '+shopCart.join('\n- ')+'\n\nVorrei ricevere disponibilità, prezzi e modalità di pagamento/consegna.';
-  window.open('https://wa.me/393895313550?text='+encodeURIComponent(msg),'_blank');
-}
-
 </script></body></html>
